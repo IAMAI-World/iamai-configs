@@ -1,0 +1,37 @@
+server:
+  forward-headers-strategy: framework
+spring:
+  data.rest.base-path: api/v1
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ats-profiles?ssl=false
+    username: user
+    password: password
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: false
+        cache:
+          use_second_level_cache: false
+          region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+          queries: true
+          ehcache:
+            missing_cache_strategy: create
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+springdoc.api-docs.path: /api/v1/profiles/api-doc
+logging:
+  level:
+    com.agenatech: INFO
+health:
+  config:
+    enabled: false
+
+
