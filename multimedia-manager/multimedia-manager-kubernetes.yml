@@ -1,9 +1,0 @@
-spring.servlet.multipart.max-file-size: 10MB
-
-amazon:
-  accessKey: '{cipher}3b7816384446bcb5264e27703a84944c87f6e9cb9ececdd1e9e402de97fa8a34228f4f781ae667da28c7e61163be7bf4'
-  secretKey: '{cipher}fa30326cf0b8c344c9ef13367782fe5003514390c6549eaaad3c0b1447a0b91b2bcd7aac2036285771d03cf442e834b9588d74160e3ade55c4d75f18ad0b0d50'
-  bucketName: iamai-multimedia-files
-  region: eu-north-1
-springdoc.api-docs.path: /api/v1/multimedia/api-doc
-management.endpoints.web.exposure.include: '*'

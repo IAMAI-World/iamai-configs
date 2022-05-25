@@ -9,9 +9,9 @@ spring:
   jpa:
     properties:
       hibernate:
-        generate_statistics: false
+        generate_statistics: true
         cache:
-          use_second_level_cache: false
+          use_second_level_cache: true
           region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
           queries: true
           ehcache:
@@ -29,7 +29,7 @@ management:
 springdoc.api-docs.path: /api/v1/profiles/api-doc
 logging:
   level:
-    com.agenatech: INFO
+    com.agenatech: DEBUG
 health:
   config:
     enabled: false

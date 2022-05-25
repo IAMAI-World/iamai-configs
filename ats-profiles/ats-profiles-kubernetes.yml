@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:postgresql://database.cohlzmdxm7m5.eu-north-1.rds.amazonaws.com:5432/ats-profiles?ssl=false
+    url: jdbc:postgresql://database.cohlzmdxm7m5.eu-north-1.rds.amazonaws.com:5432/ats-profiles-dev?ssl=false
     username: postgres
-    password: '{cipher}99b2d3640f892841be53c624652679324b5867fb4e2c1471c7dafa55c02000e4fa92f11777fb7849f9786618a36af35d'
+    password: '{cipher}c811355a418927927afbbd16c18e02042ea4b1356e5e8495abad8d72c4ee30fa9112e838fe06cf3794678e8bff5e06ea'
     hikari:
-      connection-timeout: 15000
+      connection-timeout: 20000
