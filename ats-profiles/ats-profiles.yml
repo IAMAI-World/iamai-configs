@@ -3,7 +3,7 @@ server:
 spring:
   data.rest.base-path: api/v1
   datasource:
-    url: jdbc:postgresql://localhost:5432/ats-profiles?ssl=false
+    url: jdbc:postgresql://localhost:5432/ats-profiles-dev?ssl=false
     username: user
     password: password
   jpa:
@@ -34,4 +34,5 @@ health:
   config:
     enabled: false
 
-
+server.servlet.encoding.charset: UTF-8
+server.servlet.encoding.force-response: true
