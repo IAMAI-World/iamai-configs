@@ -52,7 +52,7 @@ spring:
         - id: PublicSearch
           uri: http://localhost:8080
           predicates:
-            - Path=/api/v1/profiles
+            - Path=/api/v1/profiles, /api/v1/profiles/search
             - Query=projection, public-search-profile
             - Query=isOpenForWork, true
         - id: AdminSearch
