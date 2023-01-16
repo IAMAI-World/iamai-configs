@@ -45,7 +45,7 @@ spring:
         - id: postsPrincipal
           uri: http://profiles
           predicates:
-            - Path=/api/v1/posts, /api/v1/posts/**, /api/v1/posts-likes, /api/v1/posts-likes/**, /api/v1/posts-comments, /api/v1/posts-comments/**, /posts/me, /posts/comments/me, /posts/likes/me
+            - Path=/api/v1/posts, /api/v1/posts/**, /api/v1/posts-likes, /api/v1/posts-likes/**, /api/v1/posts-comments, /api/v1/posts-comments/**, /posts/me, /posts/comments/me, /posts/likes/me, /comments/likes/me
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
