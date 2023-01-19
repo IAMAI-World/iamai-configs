@@ -54,4 +54,4 @@ spring:
           filters:
             - RewritePath=/api/v1/admin/(?<path>.*), /api/v1//$\{path}
 keycloak-client:
-  server-url: https://auth-dev.iamai.se/auth
+  server-url: https://auth.iamai.se/auth
