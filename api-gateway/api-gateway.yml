@@ -86,18 +86,10 @@ spring:
               - iamai-admin
           filters:
             - RewritePath=/api/v1/admin/(?<path>.*), /api/v1//$\{path}
-        - id: GroupsAdmin
-          uri: http://localhost:8080
-          predicates:
-            - Path=/api/v1/groups, /api/v1/groups/**, /api/v1/group/access/*/approve, /api/v1/group/access/*/decline, /api/v1/group/access/requests
-            - Method=GET,PUT,PATCH,DELETE,POST
-          metadata:
-            auth-roles:
-              - iamai-admin
         - id: GroupsUsers
           uri: http://localhost:8080
           predicates:
-            - Path=/api/v1/groups, /api/v1/groups/**, /api/v1/me/group/*/access
+            - Path=/api/v1/groups, /api/v1/groups/**, /api/v1/me/group/*/access, /api/v1/group/access/*/approve, /api/v1/group/access/*/decline, /api/v1/group/access/requests
             - Method=GET
           filters:
             - AddPrincipalToPathFilter
