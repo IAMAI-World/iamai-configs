@@ -61,6 +61,8 @@ spring:
           metadata:
             auth-roles:
               - iamai-admin
+          filters:
+            - AddPrincipalToPathFilter
         - id: GroupsUsers
           uri: http://profiles
           predicates:
