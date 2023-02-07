@@ -1,8 +1,8 @@
 spring.servlet.multipart.max-file-size: 10MB
 amazon:
-  accessKey: '{cipher}f43199660f6da6f3f6e5ad092ce12e4e96cbd25cd52731686380114944877fe1c5b88cc5d4eccf574c3fbf833041b48f'
-  secretKey: '{cipher}8fb57fb2a640f902c26184ff54388f1a2594dcbafd28c524ea733746edcf14bde924c96ba97a9047598262cd1800fee57a1d28c1ee3a8ba03e86b9314bc33486'
-  bucketName: agenatech-dev
+  accessKey: '{cipher}49ff9515bae71d0606ded65bbc8151fc22537eb3b6074e2ea535913aa0b8ca0f799e691668ac1b41cb752a99d9ba557d'
+  secretKey: '{cipher}bf90b6127ae911113f1285fed824ba30c3a0f493982a996104d3a8b350aad0fe9ccbe7cf6089391090e6f1c48b97a53a0b2ba0479e427d279a863a04e97ec1ef'
+  bucketName: iamai-groups-img
   region: eu-north-1
 springdoc.api-docs.path: /api/v1/multimedia/api-doc
 management.endpoints.web.exposure.include: '*'
