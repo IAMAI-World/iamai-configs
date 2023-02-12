@@ -96,7 +96,7 @@ spring:
         - id: GroupsPosts
           uri: http://localhost:8080
           predicates:
-            - Path= /api/v1/groups-user, /api/v1/groups-user/**,/api/v1/groups-posts, /api/v1/groups-posts/**, /api/v1/groups-posts-likes, /api/v1/groups-posts-likes/**, /api/v1/groups-posts-comments, /api/v1/groups-posts-comments/**
+            - Path=  /api/v1/groups-posts-comments-reply-likes, /api/v1/groups-posts-comments-reply-likes/**, /api/v1/groups-user, /api/v1/groups-user/**,/api/v1/groups-posts, /api/v1/groups-posts/**, /api/v1/groups-posts-likes, /api/v1/groups-posts-likes/**, /api/v1/groups-posts-comments, /api/v1/groups-posts-comments/**
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
