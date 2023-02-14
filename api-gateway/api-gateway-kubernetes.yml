@@ -82,4 +82,4 @@ spring:
           filters:
             - AddPrincipalToPathFilter
 keycloak-client:
-  server-url: https://auth-preprod.iamai.se/auth
+  server-url: https://auth.iamai.se/auth
