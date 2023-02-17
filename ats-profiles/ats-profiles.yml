@@ -21,6 +21,19 @@ spring:
     hibernate:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: iamai.requests@gmail.com
+    password: vrxsvdvyrqtaxkan
+    admin: info@iamai.se
+    base-link: https://dev.iamai.se/user/
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 management:
   endpoints:
     web:
