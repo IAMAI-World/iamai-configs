@@ -110,7 +110,7 @@ spring:
         - id: UserGroupsPostsCommentsReply
           uri: http://localhost:8080
           predicates:
-            - Path=/api/v1/group/posts/me, /api/v1/group/posts/comments/me, /api/v1/group/posts/likes/me, /api/v1/group/posts/comments/likes/me, /api/v1/group/posts/comments/reply/me
+            - Path= /api/v1/me/request-consultant/*, /api/v1/group/posts/me, /api/v1/group/posts/comments/me, /api/v1/group/posts/likes/me, /api/v1/group/posts/comments/likes/me, /api/v1/group/posts/comments/reply/me
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
