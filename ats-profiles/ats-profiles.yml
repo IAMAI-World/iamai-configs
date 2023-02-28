@@ -3,7 +3,7 @@ server:
 spring:
   data.rest.base-path: api/v1
   datasource:
-    url: jdbc:postgresql://localhost:5432/ats-profiles?ssl=false
+    url: jdbc:postgresql://localhost:5432/ats-profiles-dev?ssl=false
     username: user
     password: password
   jpa:
@@ -21,6 +21,19 @@ spring:
     hibernate:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: iamai.requests@gmail.com
+    password: vrxsvdvyrqtaxkan
+    admin: gladiypavlo@gmail.com
+    base-link: https://dev.iamai.se/user/
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 management:
   endpoints:
     web:
