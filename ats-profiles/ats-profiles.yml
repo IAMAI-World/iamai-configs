@@ -1,6 +1,8 @@
 server:
   forward-headers-strategy: framework
 spring:
+  main:
+    allow-bean-definition-overriding: true
   data.rest.base-path: api/v1
   datasource:
     url: jdbc:postgresql://localhost:5432/ats-profiles-dev?ssl=false
