@@ -136,7 +136,7 @@ spring:
         jwt:
           jwk-set-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/certs
 keycloak-client:
-  server-url: https://auth-dev.iamai.se/auth
+  server-url: https://auth.iamai.se/auth
   realm: iamai
 management:
   endpoints:
