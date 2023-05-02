@@ -51,3 +51,4 @@ health:
 
 server.servlet.encoding.charset: UTF-8
 server.servlet.encoding.force-response: true
+web.base-url: https://dev.iamai.se/
