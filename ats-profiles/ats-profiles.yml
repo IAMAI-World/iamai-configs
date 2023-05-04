@@ -24,10 +24,12 @@ spring:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
   mail:
+    smtp:
+      timeout: 60000
     host: smtp.mandrillapp.com
     port: 587
-    username: iamai.requests@gmail.com
-    password: vrxsvdvyrqtaxkan
+    username: IAMAI
+    password: md-ZpxXER_k9MwK0S8_x55eNQ
     admin: gladiypavlo@gmail.com
     base-link: https://dev.iamai.se/user/
     properties:
