@@ -1,9 +1,11 @@
 server:
   forward-headers-strategy: framework
 spring:
+  main:
+    allow-bean-definition-overriding: true
   data.rest.base-path: api/v1
   datasource:
-    url: jdbc:postgresql://localhost:5432/ats-profiles-dev?ssl=false
+    url: jdbc:postgresql://localhost:5432/ats-profiles?ssl=false
     username: user
     password: password
   jpa:
@@ -22,11 +24,13 @@ spring:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
   mail:
-    host: smtp.gmail.com
+    smtp:
+      timeout: 60000
+    host: smtp.mandrillapp.com
     port: 587
-    username: iamai.requests@gmail.com
-    password: vrxsvdvyrqtaxkan
-    admin: info@iamai.se
+    username: IAMAI
+    password: md-ZpxXER_k9MwK0S8_x55eNQ
+    admin: gladiypavlo@gmail.com
     base-link: https://dev.iamai.se/user/
     properties:
       mail:
@@ -49,3 +53,4 @@ health:
 
 server.servlet.encoding.charset: UTF-8
 server.servlet.encoding.force-response: true
+web.base-url: https://preprod.iamai.se/

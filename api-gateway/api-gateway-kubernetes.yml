@@ -56,7 +56,7 @@ spring:
         - id: GroupsUsers
           uri: http://profiles
           predicates:
-            - Path= /api/v1/link/preview, /api/v1/groups-posts-comments-reply-likes, /api/v1/groups-posts-comments-reply-likes/**, /api/v1/groups-user, /api/v1/groups-user/**,  /api/v1/groups, /api/v1/groups/**, /api/v1/me/group/*/access, /api/v1/me/group/*/check-access,  /api/v1/group/access/*/approve, /api/v1/group/access/*/decline, /api/v1/group/access/requests
+            - Path= /api/v1/link/preview, /api/v1/groups-posts-comments-reply-likes, /api/v1/groups-posts-comments-reply-likes/**, /api/v1/groups-user, /api/v1/groups-user/**,  /api/v1/groups, /api/v1/groups/**, /api/v1/me/group/*/access, /api/v1/me/group/*/check-access, /api/v1/me/group/*/subscribe, /api/v1/me/group/*/unsubscribe, /api/v1/subscribe, /api/v1/unsubscribe,  /api/v1/group/access/*/approve, /api/v1/group/access/*/decline, /api/v1/group/access/requests
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
@@ -77,7 +77,7 @@ spring:
         - id: UserGroupsPostsCommentsReply
           uri: http://profiles
           predicates:
-            - Path=/api/v1/group/posts/me, /api/v1/group/posts/comments/me, /api/v1/group/posts/likes/me, /api/v1/group/posts/comments/likes/me, /api/v1/group/posts/comments/reply/me
+            - Path=  /api/v1/group/users/*, /api/v1/me/request-consultant/*, /api/v1/me/post-gigs, /api/v1/group/posts/comments/me, /api/v1/group/posts/likes/me, /api/v1/group/posts/comments/likes/me, /api/v1/group/posts/comments/reply/me
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter

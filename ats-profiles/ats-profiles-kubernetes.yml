@@ -1,4 +1,6 @@
 spring:
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     url: jdbc:postgresql://database.cohlzmdxm7m5.eu-north-1.rds.amazonaws.com:5432/ats-profiles?ssl=false
     username: postgres
