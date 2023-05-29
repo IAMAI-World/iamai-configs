@@ -81,5 +81,12 @@ spring:
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
+        - id: Subscription
+          uri: http://profiles
+          predicates:
+            - Path=  /api/v1/newsletter/subscribe/me, /api/v1/newsletter/unsubscribe/me
+            - Method=GET,POST
+          filters:
+            - AddPrincipalToPathFilter
 keycloak-client:
   server-url: https://auth.iamai.se/auth
