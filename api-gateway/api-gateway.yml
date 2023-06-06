@@ -117,7 +117,7 @@ spring:
         - id: Subscription
           uri: http://localhost:8080
           predicates:
-            - Path=  /api/v1/newsletter/subscribe/me, /api/v1/newsletter/unsubscribe/me
+            - Path=  /api/v1/newsletter/subscribe/me, /api/v1/newsletter/unsubscribe/me, /api/v1/newsletter-subscription/**, /api/v1/newsletter-subscription
             - Method=GET,POST
           filters:
             - AddPrincipalToPathFilter
