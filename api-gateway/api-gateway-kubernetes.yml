@@ -5,7 +5,7 @@ spring:
         - id: profilesPrincipal
           uri: http://profiles
           predicates:
-            - Path=/api/v1/profiles/me, /api/v1/profiles/me/**, /api/v1/webhook/oneflow, /api/v1/oneflow/create, /api/v1/profiles/*, /api/v1/profiles
+            - Path=/api/v1/profiles/active/me/*, /api/v1/profiles/me/accounts, /api/v1/account, /api/v1/account/**, /api/v1/profiles/me, /api/v1/profiles/me/**, /api/v1/webhook/oneflow, /api/v1/oneflow/create, /api/v1/profiles/*, /api/v1/profiles, /api/v1/resumes, /api/v1/cover-letter
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
@@ -84,7 +84,7 @@ spring:
         - id: Subscription
           uri: http://profiles
           predicates:
-            - Path=  /api/v1/newsletter/subscribe/me, /api/v1/newsletter/unsubscribe/me
+            - Path=  /api/v1/newsletter/subscribe/me, /api/v1/newsletter/unsubscribe/me, /api/v1/newsletter-subscription/**, /api/v1/newsletter-subscription
             - Method=GET,POST
           filters:
             - AddPrincipalToPathFilter
