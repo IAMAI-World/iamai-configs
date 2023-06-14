@@ -5,7 +5,7 @@ spring:
     allow-bean-definition-overriding: true
   data.rest.base-path: api/v1
   datasource:
-    url: jdbc:postgresql://localhost:5432/ats-profiles-dev?ssl=false
+    url: jdbc:postgresql://localhost:5432/ats-profiles?ssl=false
     username: user
     password: password
   jpa:
@@ -55,3 +55,4 @@ server.servlet.encoding.charset: UTF-8
 server.servlet.encoding.force-response: true
 web.base-url: https://dev.iamai.se/
 api.base-url: https://api-dev.iamai.se/api/v1
+fileClient.url: https://api-dev.iamai.se
