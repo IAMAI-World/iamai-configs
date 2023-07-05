@@ -53,6 +53,9 @@ health:
 
 server.servlet.encoding.charset: UTF-8
 server.servlet.encoding.force-response: true
-web.base-url: https://dev.iamai.se/
-api.base-url: https://api-dev.iamai.se/api/v1
-fileClient.url: https://api-dev.iamai.se
+web.base-url: https://preprod.iamai.se/
+api.base-url: https://preprod.iamai.se/api/v1
+fileClient.url: https://api-preprod.iamai.se
+keycloak-client:
+  server-url: https://auth-dev.iamai.se/auth
+  realm: iamai
