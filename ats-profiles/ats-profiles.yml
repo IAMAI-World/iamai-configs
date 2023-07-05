@@ -56,6 +56,6 @@ server.servlet.encoding.force-response: true
 keycloak-client:
   server-url: https://auth.iamai.se/auth
   realm: iamai
-web.base-url: https://iamai.se/
+web.base-url: https://world.iamai.se
 api.base-url: https://api.iamai.se/api/v1
 fileClient.url: https://api.iamai.se
