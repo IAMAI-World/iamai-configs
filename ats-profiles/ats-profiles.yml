@@ -59,3 +59,5 @@ fileClient.url: https://api-dev.iamai.se
 keycloak-client:
   server-url: https://auth-dev.iamai.se/auth
   realm: iamai
+aws.accessKey: '{cipher}49ff9515bae71d0606ded65bbc8151fc22537eb3b6074e2ea535913aa0b8ca0f799e691668ac1b41cb752a99d9ba557d'
+aws.secretKey: '{cipher}bf90b6127ae911113f1285fed824ba30c3a0f493982a996104d3a8b350aad0fe9ccbe7cf6089391090e6f1c48b97a53a0b2ba0479e427d279a863a04e97ec1ef'
