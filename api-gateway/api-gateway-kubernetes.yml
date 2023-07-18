@@ -5,7 +5,7 @@ spring:
         - id: profilesPrincipal
           uri: http://profiles
           predicates:
-            - Path=/api/v1/profiles/active/me/*, /api/v1/profiles/me/accounts, /api/v1/account, /api/v1/account/**, /api/v1/profiles/me, /api/v1/profiles/me/**, /api/v1/webhook/oneflow, /api/v1/oneflow/create, /api/v1/profiles/*, /api/v1/profiles, /api/v1/resumes, /api/v1/cover-letter
+            - Path=/api/v1/profiles/active/me/*, /api/v1/profiles/me/accounts, /api/v1/account, /api/v1/account/**, /api/v1/profiles/me, /api/v1/profiles/me/**, /api/v1/webhook/oneflow, /api/v1/oneflow/create, /api/v1/profiles/*, /api/v1/profiles, /api/v1/resumes, /api/v1/cover-letter, /api/v1/interview-review, /api/v1/interview-review-status
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
