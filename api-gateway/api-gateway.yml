@@ -38,7 +38,7 @@ spring:
         - id: profilesPrincipal
           uri: http://localhost:8080
           predicates:
-            - Path= /api/v1/linkedin, /api/v1/linkedin/**, /api/v1/favorite-gigs, /api/v1/favorite-gigs/**, /api/v1/favorite-consultants,/api/v1/favorite-consultants/**, /api/v1/profiles/active/me/*, /api/v1/profiles/me/accounts, /api/v1/profiles/me/linkedin, /api/v1/account, /api/v1/account/**, /api/v1/profiles/me, /api/v1/webhook/oneflow, /api/v1/oneflow/create, /api/v1/profiles/*, /api/v1/profiles, /api/v1/resumes, /api/v1/cover-letter, /api/v1/interview-review, /api/v1/interview-review-status, /api/v1/fetch-file-content, /api/v1/add-gig-overview, /api/v1/job-matching/**, /api/v1/add-user-overview/**, /api/v1/user-matching, /api/v1/add-users-overview, /api/v1/matching-wages, /api/v1/save-interview-review, /api/v1/website-visit, /api/v1/webhook/linkedin-messages, /api/v1/consultant-visit, /api/v1/notes/search, /api/v1/get-suitable-users/**, /api/v1/gig-matching, /api/v1/get-suitable-gigs/**, /api/v1/user-matching-wages, /api/v1/get-recent-consultants, /api/v1/contact-us-message, /api/v1/bullet-points-cv, /api/v1/add-agency-user, /api/v1/get-agencies-names
+            - Path= /api/v1/linkedin, /api/v1/linkedin/**, /api/v1/favorite-gigs, /api/v1/favorite-gigs/**, /api/v1/favorite-consultants,/api/v1/favorite-consultants/**, /api/v1/profiles/active/me/*, /api/v1/profiles/me/accounts, /api/v1/profiles/me/linkedin, /api/v1/account, /api/v1/account/**, /api/v1/profiles/me, /api/v1/webhook/oneflow, /api/v1/oneflow/create, /api/v1/profiles/*, /api/v1/profiles, /api/v1/resumes, /api/v1/cover-letter, /api/v1/interview-review, /api/v1/interview-review-status, /api/v1/fetch-file-content, /api/v1/add-gig-overview, /api/v1/job-matching/**, /api/v1/add-user-overview/**, /api/v1/user-matching, /api/v1/add-users-overview, /api/v1/matching-wages, /api/v1/save-interview-review, /api/v1/website-visit, /api/v1/webhook/linkedin-messages, /api/v1/consultant-visit, /api/v1/notes/search, /api/v1/get-suitable-users/**, /api/v1/gig-matching, /api/v1/get-suitable-gigs/**, /api/v1/user-matching-wages, /api/v1/get-recent-consultants, /api/v1/contact-us-message, /api/v1/bullet-points-cv, /api/v1/add-agency-user, /api/v1/get-agencies-names, /api/v1/knowledge-program/access/requests, api/v1/knowledge-program/access/*/close, api/v1/knowledge-program/request
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
@@ -89,7 +89,7 @@ spring:
         - id: GroupsUsers
           uri: http://localhost:8080
           predicates:
-            - Path=/api/v1/groups, /api/v1/groups/**, /api/v1/me/group/*/access, /api/v1/*/group/*/check-access, /api/v1/*/group/*/subscribe, /api/v1/*/group/*/unsubscribe, /api/v1/subscribe, /api/v1/unsubscribe, /api/v1/group/access/*/approve, /api/v1/group/access/*/decline, /api/v1/group/access/requests, /api/v1/knowledge-program/access/requests, api/v1/knowledge-program/access/*/close, api/v1/knowledge-program/request
+            - Path=/api/v1/groups, /api/v1/groups/**, /api/v1/me/group/*/access, /api/v1/*/group/*/check-access, /api/v1/*/group/*/subscribe, /api/v1/*/group/*/unsubscribe, /api/v1/subscribe, /api/v1/unsubscribe, /api/v1/group/access/*/approve, /api/v1/group/access/*/decline, /api/v1/group/access/requests
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
