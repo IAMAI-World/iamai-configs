@@ -65,4 +65,5 @@ aws.accessKey: '{cipher}49ff9515bae71d0606ded65bbc8151fc22537eb3b6074e2ea535913a
 aws.secretKey: '{cipher}bf90b6127ae911113f1285fed824ba30c3a0f493982a996104d3a8b350aad0fe9ccbe7cf6089391090e6f1c48b97a53a0b2ba0479e427d279a863a04e97ec1ef'
 mailchimp.Key: '{cipher}ef03af8b6d311dc45f2536a9d097a730fa1ab986444767cb3ceffe2433a3f615a7f5d0278d14dfe5bfb1a69ce1430b99284665b27b15f7e33e76460f304b3b9d'
 pipedrive.Key: '{cipher}e086feb9e58268d5382c43bbd8051ddb9cf3e0fd1f529eefc6984fce400f12fa9966ec76ac6d4530c97f1c5e730f14c445c51277e284191cfdfa4de1b36620a0'
-data.transfer.cron: '0 0 0 2 1 *'
+data.transfer.cron: '0 0 11 * * *'
+send.post.cron: '0 0 1 31 2 *'
