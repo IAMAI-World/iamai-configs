@@ -66,7 +66,7 @@ server.servlet.encoding.force-response: true
 keycloak-client:
   server-url: https://auth.iamaiworld.ai/auth
   realm: iamai
-web.base-url: https://world.iamaiworld.ai
+web.base-url: https://iamaiworld.ai
 api.base-url: https://api.iamaiworld.ai/api/v1
 fileClient.url: https://api.iamaiworld.ai
 aws.accessKey: '{cipher}49ff9515bae71d0606ded65bbc8151fc22537eb3b6074e2ea535913aa0b8ca0f799e691668ac1b41cb752a99d9ba557d'
