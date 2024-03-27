@@ -94,7 +94,7 @@ spring:
         - id: adminPositions
           uri: http://localhost:8080
           predicates:
-            - Path=/api/v1/positions/**, /api/v1/matches/**, /api/v1/projects/**, /api/v1/permissions/*/api/v1/department, /api/v1/roles/api/v1/department, /api/v1/roles, /api/v1/department-profile, /api/v1/department-profiles-upload
+            - Path=/api/v1/positions/**, /api/v1/matches/**, /api/v1/projects/**, /api/v1/permissions/*, /api/v1/department, /api/v1/roles, /api/v1/department-profile, /api/v1/department-profiles-upload
           metadata:
             auth-roles:
               - iamai-admin
