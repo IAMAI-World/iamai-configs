@@ -100,9 +100,7 @@ spring:
             auth-roles:
               - iamai-admin
           filters:
-            - name: Keycloak
-              args:
-                roles: iamai-admin
+            - AddPrincipalToPathFilter
         - id: GroupsUsers
           uri: http://localhost:8080
           predicates:
