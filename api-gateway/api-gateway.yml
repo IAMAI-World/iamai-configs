@@ -91,16 +91,16 @@ spring:
               - iamai-admin
           filters:
             - RewritePath=/api/v1/admin/(?<path>.*), /api/v1//$\{path}
-        - id: adminPositions
-          uri: http://localhost:8080
-          predicates:
-            - Path=/api/v1/roles
-            - Method=GET,PUT,PATCH,DELETE,POST
-          metadata:
-            auth-roles:
-              - iamai-admin
-          filters:
-            - AddPrincipalToPathFilter
+        # - id: adminPositions
+        #   uri: http://localhost:8080
+        #   predicates:
+        #     - Path=/api/v1/roles
+        #     - Method=GET,PUT,PATCH,DELETE,POST
+        #   metadata:
+        #     auth-roles:
+        #       - iamai-admin
+        #   filters:
+        #     - AddPrincipalToPathFilter
         - id: GroupsUsers
           uri: http://localhost:8080
           predicates:
