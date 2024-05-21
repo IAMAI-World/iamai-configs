@@ -165,6 +165,9 @@ management:
     web:
       exposure:
         include: '*'
+  health:
+    mail:
+      enabled: false
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
