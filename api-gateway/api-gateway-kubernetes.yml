@@ -99,4 +99,4 @@ spring:
           filters:
             - AddPrincipalToPathFilter
 keycloak-client:
-  server-url: https://auth-dev.iamaiworld.ai/auth
+  server-url: https://auth-dashboard.iamaiworld.ai/auth
