@@ -33,7 +33,7 @@ spring:
     host: smtp.mandrillapp.com
     port: 587
     username: IAMAI
-    password: md-ZpxXER_k9MwK0S8_x55eNQ
+    password: '{cipher}1ea47bd7c40ca76ffc64723c1c9cf4727888f738f1c63e46eab235af1dc1aa451564021f2c3e3b2d32730c39b0425c54'
     admin: gladiypavlo@gmail.com
     base-link: https://dev.iamaiworld.ai/user/
     properties:
