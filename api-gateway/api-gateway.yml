@@ -22,7 +22,7 @@ spring:
     gateway:
       httpclient:
         connect-timeout: 3000
-        response-timeout: 70s
+        response-timeout: 120s
         codec:
           multipart:
             enabled: true
