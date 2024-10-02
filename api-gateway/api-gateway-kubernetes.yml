@@ -12,7 +12,7 @@ spring:
         - id: postsPrincipal
           uri: http://profiles
           predicates:
-            - Path=/api/v1/favorite-gigs, /api/v1/favorite-gigs/**, /api/v1/favorite-consultants,/api/v1/favorite-consultants/**, /api/v1/posts, /api/v1/posts/**, /api/v1/posts-likes, /api/v1/posts-likes/**, /api/v1/posts-comments, /api/v1/posts-comments/**, /api/v1/posts/me, /api/v1/posts/comments/me, /api/v1/posts/likes/me, /api/v1/comments/likes/me, /api/v1/comment-likes, /api/v1/comment-likes/**, /api/v1/group/**, /api/v1/group/add-users
+            - Path=/api/v1/favorite-gigs, /api/v1/favorite-gigs/**, /api/v1/favorite-consultants,/api/v1/favorite-consultants/**, /api/v1/posts, /api/v1/posts/**, /api/v1/posts-likes, /api/v1/posts-likes/**, /api/v1/posts-comments, /api/v1/posts-comments/**, /api/v1/posts/me, /api/v1/posts/comments/me, /api/v1/posts/likes/me, /api/v1/comments/likes/me, /api/v1/comment-likes, /api/v1/comment-likes/**, /api/v1/group/**, /api/v1/group/add-users, api/v1/remove-gig-information
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
