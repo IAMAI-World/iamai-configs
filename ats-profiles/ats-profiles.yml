@@ -86,3 +86,7 @@ stripe.Key: '{cipher}0370b700816407b5614dce89591f41b4c175b626176e9c8a3406a22983d
 customerIO.Username: '{cipher}e17635869d151f27e8e3be2cbb8b787e2fb7538ca1b165ce4967238bfc61c7894c01162796ba0dbcfb0a66bca98678c6'
 customerIO.Password: '{cipher}3b9587d5a2cfaa27156e642c8819bc58730368d7751d4651f79a25dd22cb6ef648287477e35d37397f8a8d8b5c078881'
 sync.url: https://api-shelf-dev.iamaiworld.ai/api/v1/employees/sync
+openai.apiUrl: https://api.openai.com/v1/chat/completions
+openai.embeddingsApiUrl: https://api.openai.com/v1/embeddings
+groq.apiUrl: https://api.groq.com/openai/v1/chat/completions
+groq.Key: '{cipher}b5d835f21f3e3dd52466b46f6c54fde678cce81911eae0eb0a5f1fe59f59e86e2ece0403f8f469dce280b4f894569a8a5a7d97a44962a846682a248902b79448884fb7e8ef48774acd3a838206e52fb4'
