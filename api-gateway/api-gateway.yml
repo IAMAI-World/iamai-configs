@@ -54,6 +54,13 @@ spring:
             - Method=GET,PUT,PATCH,DELETE,POST
           filters:
             - AddPrincipalToPathFilter
+        - id: skillOptionsPrincipal
+          uri: http://localhost:8080
+          predicates:
+            - Path=/api/v1/skill-options, /api/v1/skill-options/*, /api/v1/skill-options/search, /api/v1/skill-options/pending, /api/v1/skill-options/*/approve, /api/v1/skill-options/*/reject, /api/v1/skill-options/batch
+            - Method=GET,PUT,PATCH,DELETE,POST
+          filters:
+            - AddPrincipalToPathFilter
         - id: PublicSearch
           uri: http://localhost:8080
           predicates:
