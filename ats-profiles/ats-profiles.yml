@@ -61,6 +61,9 @@ health:
   config:
     enabled: false
 
+app.email.info: 'info@iamai.se'
+app.email.manager: 'peter.holmlund.kelly@iamai.se'
+app.email.contract: 'niclas.wallin@iamai.se'
 server.servlet.encoding.charset: UTF-8
 server.servlet.encoding.force-response: true
 web.base-url: https://preprod.iamaiworld.ai/
@@ -73,7 +76,6 @@ aws.accessKey: '{cipher}36080fc49b5c62ca98b058a594e6a730e3912b3bbce706dc20c7f0f2
 aws.secretKey: '{cipher}9f38d8429261f5de78bc6ed9e5435d2413ecc5a9689266671c832f742489c0490e623f4197263bfff0045e9b6e1224c0f37a839d0b9c5a6c25c1b27934d86e62'
 mailchimp.Key: '{cipher}1680a0e3f379609fa1ba7486020f5d6e43d2b3611cf0ed089dcb6b5620be84380f83c0fbb2a391adf2ebed9ea5a55fd07c4801abdd5db95649871464f2fb372f'
 pipedrive.Key: '{cipher}e086feb9e58268d5382c43bbd8051ddb9cf3e0fd1f529eefc6984fce400f12fa9966ec76ac6d4530c97f1c5e730f14c445c51277e284191cfdfa4de1b36620a0'
-openai.Key: '{cipher}9ef35231e0ebdfda014311061e689fc648a2d8670d4e04bcf8fdb4263a532626234db68da2bfda86335d3f065abcc941e6e067a8d0dcbd7e70830f78fc43a77b3ed70681def4523a4c10471f094b4831'
 data.transfer.cron: '0 0 11 * * *'
 send.post.cron: '0 0 1 31 2 *'
 trueoriginal.ApiToken: '{cipher}fc73d588ca60d2d9d6d5d7b5ca4f247d85677fcfd888d1569c1bf96cbe0e62aa5c95aa6b837740feffd30bdb9ef75104352d85351eceaec221582f79e34b2500'
@@ -85,8 +87,13 @@ cms.ApiToken: '{cipher}6d751c87e92e8314b8e8955ad9e484668b1d4efd5ad0a3cf7a7a1e97e
 stripe.Key: '{cipher}0370b700816407b5614dce89591f41b4c175b626176e9c8a3406a22983d008aedb1fbceadc366e3c0630c034297bbb1e0856aff75b1b7ecf9216ca58ccd6a92503b482d7a3e1d89749e6033e0dc5499456b225b20f7b5eac5b81aea05b6b8c2194ca7fa978daff543a010f9b33115f6cb30c12d5e0ad67b42ad848b54f68ab49'
 customerIO.Username: '{cipher}e17635869d151f27e8e3be2cbb8b787e2fb7538ca1b165ce4967238bfc61c7894c01162796ba0dbcfb0a66bca98678c6'
 customerIO.Password: '{cipher}3b9587d5a2cfaa27156e642c8819bc58730368d7751d4651f79a25dd22cb6ef648287477e35d37397f8a8d8b5c078881'
+customerIO.AppApiKey: '{cipher}b60943a48fd3610c12050520247a8b17c46d41fa345ea6435d4ec4e330655394d5ea756f2bc1a5e4b5f069dd5b234f504d4b0480772fd6e3d5fa2cfd70211290'
 sync.url: https://api-shelf-dev.iamaiworld.ai/api/v1/employees/sync
 openai.apiUrl: https://api.openai.com/v1/chat/completions
 openai.embeddingsApiUrl: https://api.openai.com/v1/embeddings
+openai.Key: '{cipher}9ef35231e0ebdfda014311061e689fc648a2d8670d4e04bcf8fdb4263a532626234db68da2bfda86335d3f065abcc941e6e067a8d0dcbd7e70830f78fc43a77b3ed70681def4523a4c10471f094b4831'
+openai.text_model_name: 'gpt-4.1-mini-2025-04-14'
+openai.embedding_model_name: 'text-embedding-ada-002'
 groq.apiUrl: https://api.groq.com/openai/v1/chat/completions
 groq.Key: '{cipher}b5d835f21f3e3dd52466b46f6c54fde678cce81911eae0eb0a5f1fe59f59e86e2ece0403f8f469dce280b4f894569a8a5a7d97a44962a846682a248902b79448884fb7e8ef48774acd3a838206e52fb4'
+groq.text_model_name: 'meta-llama/llama-4-scout-17b-16e-instruct'
