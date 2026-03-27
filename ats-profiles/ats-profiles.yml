@@ -62,7 +62,7 @@ health:
     enabled: false
 
 app.email.info: 'info@iamai.se'
-app.email.manager: 'peter.holmlund.kelly@iamai.se'
+app.email.consultant: 'consultants@iamai.se'
 app.email.contract: 'niclas.wallin@iamai.se'
 server.servlet.encoding.charset: UTF-8
 server.servlet.encoding.force-response: true
