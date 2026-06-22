@@ -57,6 +57,11 @@ fileClient.url: https://api-preprod.iamaiworld.ai
 keycloak-client:
   server-url: https://auth-preprod.iamaiworld.ai/auth
   realm: iamai
+shelf-keycloak-client:
+  server-url: https://auth-preprod.iamaiworld.ai/auth
+  realm: iamai
+  client-id: sync
+  client-secret: '{cipher}b9c2ec7b14e24beebfe84a6a6e5685ddf5a1fd758533d4696d764053595c4199dd50bf3dd4863d837ee0ec3ecd28d85214aeda96fcb950cc94f86f757c7c900b'
 aws.accessKey: '{cipher}36080fc49b5c62ca98b058a594e6a730e3912b3bbce706dc20c7f0f27c15ca58d96ca424599615a121a710743b9baa35'
 aws.secretKey: '{cipher}9f38d8429261f5de78bc6ed9e5435d2413ecc5a9689266671c832f742489c0490e623f4197263bfff0045e9b6e1224c0f37a839d0b9c5a6c25c1b27934d86e62'
 mailchimp.Key: '{cipher}1680a0e3f379609fa1ba7486020f5d6e43d2b3611cf0ed089dcb6b5620be84380f83c0fbb2a391adf2ebed9ea5a55fd07c4801abdd5db95649871464f2fb372f'
