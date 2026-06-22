@@ -87,3 +87,10 @@ openai.embedding_model_name: 'text-embedding-ada-002'
 groq.apiUrl: https://api.groq.com/openai/v1/chat/completions
 groq.Key: '{cipher}b5d835f21f3e3dd52466b46f6c54fde678cce81911eae0eb0a5f1fe59f59e86e2ece0403f8f469dce280b4f894569a8a5a7d97a44962a846682a248902b79448884fb7e8ef48774acd3a838206e52fb4'
 groq.text_model_name: 'meta-llama/llama-4-scout-17b-16e-instruct'
+sentry:
+  dsn: '{cipher}126fa5bfcaabe1bf73162806a267a999fa8d7f5f9476c1621d71df18e5c115c5d8d8ff7bb1138930ab61ede02e5bfc83cbcb0c826a14048b1dfa49669d2966de34ef19f329d9f448b40b9adef0dfe236684e467ce57bde831f67477362c2f68245e60c251e0b32de50384df4b7f8ccd1'
+  environment: local
+  release: 1.0.0
+  traces-sample-rate: 0.5
+  send-default-pii: false
+  enable-tracing: true
