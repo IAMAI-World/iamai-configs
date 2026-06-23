@@ -94,3 +94,5 @@ sentry:
   traces-sample-rate: 0.5
   send-default-pii: false
   enable-tracing: true
+shelf-service:
+  api-url: https://api-shelf-dev.iamaiworld.ai/api/v1
