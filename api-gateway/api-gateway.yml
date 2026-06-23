@@ -172,4 +172,4 @@ springdoc:
 health:
   config:
     enabled: false
-profiles.base-url: https://preprod.iamaiworld.ai
+profiles.base-url: https://api-preprod.iamaiworld.ai
