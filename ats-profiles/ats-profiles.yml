@@ -51,17 +51,22 @@ app.email.consultant: 'consultants@iamai.se'
 app.email.contract: 'niclas.wallin@iamai.se'
 server.servlet.encoding.charset: UTF-8
 server.servlet.encoding.force-response: true
-keycloak-client:
-  server-url: https://auth.iamaiworld.ai/auth
-  realm: iamai
-web.base-url: https://iamaiworld.ai
-api.base-url: https://api.iamaiworld.ai/api/v1
+web.base-url: https://iamaiworld.ai/
+api.base-url: https://iamaiworld.ai/api/v1
 fileClient.url: https://api.iamaiworld.ai
+keycloak-client:
+  server-url: https://auth-dashboard.iamaiworld.ai/auth
+  realm: iamai
+shelf-keycloak-client:
+  server-url: https://auth-dashboard.iamaiworld.ai/auth
+  realm: iamai
+  client-id: sync
+  client-secret: '{cipher}fcb95d9963d840bbf839daeac12c35a62035a318aa35f6498e1b9f5396debf976437ff657517ffcf69bf6127a135b911efb066fbb185d5326be4f6fbdd25e71f'
 aws.accessKey: '{cipher}36080fc49b5c62ca98b058a594e6a730e3912b3bbce706dc20c7f0f27c15ca58d96ca424599615a121a710743b9baa35'
 aws.secretKey: '{cipher}9f38d8429261f5de78bc6ed9e5435d2413ecc5a9689266671c832f742489c0490e623f4197263bfff0045e9b6e1224c0f37a839d0b9c5a6c25c1b27934d86e62'
 mailchimp.Key: '{cipher}1680a0e3f379609fa1ba7486020f5d6e43d2b3611cf0ed089dcb6b5620be84380f83c0fbb2a391adf2ebed9ea5a55fd07c4801abdd5db95649871464f2fb372f'
 pipedrive.Key: '{cipher}e086feb9e58268d5382c43bbd8051ddb9cf3e0fd1f529eefc6984fce400f12fa9966ec76ac6d4530c97f1c5e730f14c445c51277e284191cfdfa4de1b36620a0'
-data.transfer.cron: '0 0 0 2 1 *'
+data.transfer.cron: '0 0 11 * * *'
 send.post.cron: '0 0 1 31 2 *'
 trueoriginal.ApiToken: '{cipher}fc73d588ca60d2d9d6d5d7b5ca4f247d85677fcfd888d1569c1bf96cbe0e62aa5c95aa6b837740feffd30bdb9ef75104352d85351eceaec221582f79e34b2500'
 trueoriginal.Username: '{cipher}be132331d52308b1a590723e3b0cca1b29e273e6edb22736fed0dbba9a502b7936be1261114bee1096a1ce080bd4c7cf5c67bccde376f1a0d1e516ca44071d1d'
@@ -82,3 +87,12 @@ openai.embedding_model_name: 'text-embedding-ada-002'
 groq.apiUrl: https://api.groq.com/openai/v1/chat/completions
 groq.Key: '{cipher}b5d835f21f3e3dd52466b46f6c54fde678cce81911eae0eb0a5f1fe59f59e86e2ece0403f8f469dce280b4f894569a8a5a7d97a44962a846682a248902b79448884fb7e8ef48774acd3a838206e52fb4'
 groq.text_model_name: 'meta-llama/llama-4-scout-17b-16e-instruct'
+sentry:
+  dsn: '{cipher}126fa5bfcaabe1bf73162806a267a999fa8d7f5f9476c1621d71df18e5c115c5d8d8ff7bb1138930ab61ede02e5bfc83cbcb0c826a14048b1dfa49669d2966de34ef19f329d9f448b40b9adef0dfe236684e467ce57bde831f67477362c2f68245e60c251e0b32de50384df4b7f8ccd1'
+  environment: dev
+  release: 1.0.0
+  traces-sample-rate: 0.5
+  send-default-pii: false
+  enable-tracing: true
+shelf-service:
+  api-url: https://api-shelf.iamaiworld.ai/api/v1
