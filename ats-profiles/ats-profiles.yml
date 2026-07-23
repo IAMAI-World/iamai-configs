@@ -55,10 +55,10 @@ web.base-url: https://iamaiworld.ai/
 api.base-url: https://iamaiworld.ai/api/v1
 fileClient.url: https://api.iamaiworld.ai
 keycloak-client:
-  server-url: https://auth-dashboard.iamaiworld.ai/auth
+  server-url: https://auth.iamaiworld.ai/auth
   realm: iamai
 shelf-keycloak-client:
-  server-url: https://auth-dashboard.iamaiworld.ai/auth
+  server-url: https://auth.iamaiworld.ai/auth
   realm: iamai
   client-id: sync
   client-secret: '{cipher}fcb95d9963d840bbf839daeac12c35a62035a318aa35f6498e1b9f5396debf976437ff657517ffcf69bf6127a135b911efb066fbb185d5326be4f6fbdd25e71f'
