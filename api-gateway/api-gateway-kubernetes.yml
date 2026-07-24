@@ -96,5 +96,5 @@ spring:
           filters:
             - AddPrincipalToPathFilter
 keycloak-client:
-  server-url: https://auth-preprod.iamaiworld.ai/auth
+  server-url: https://auth-dashboard-dev.iamaiworld.ai/auth
 profiles.base-url: https://api-preprod.iamaiworld.ai
